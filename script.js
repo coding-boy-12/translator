@@ -62,7 +62,7 @@ icons.forEach(icon => {
                 utterance = new SpeechSynthesisUtterance(toText.value);
                 utterance.lang = selectTag[1].value; // setting utterance language to toSelect tag value 
             }
-            SpeechSynthesis.speak(utterance); // speak the passed utterance
+            speechSynthesis.speak(utterance); // speak the passed utterance
         }
     });
 })
